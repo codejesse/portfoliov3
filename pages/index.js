@@ -32,7 +32,7 @@ export default function Home() {
         <p className="animate__animated animate__fadeInUp">
           frontend developer
         </p>
-        <Link href="/works">
+        <Link href="/works" passHref>
           <button>Explore</button>
         </Link>
       </div>
