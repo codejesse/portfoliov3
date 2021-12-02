@@ -8,7 +8,9 @@ export default function works() {
     <>
       <Text className={styles.Nav} size={20}>
         {" "}
-        <Link href="/">&larr;Back</Link>
+        <Link href="/" passHref>
+          &larr;Back
+        </Link>
       </Text>
       <title>Works</title>
       <div className={styles.works}>
@@ -19,7 +21,12 @@ export default function works() {
               <Text h4>Newsit</Text>
               <Text>News web app made with Reactjs.</Text>
               <Card.Footer>
-                <Link color target="_blank" href="https://newsit.vercel.app/">
+                <Link
+                  color
+                  target="_blank"
+                  href="https://newsit.vercel.app/"
+                  passHref
+                >
                   Visit
                 </Link>
                 <Spacer x={1} />
@@ -27,6 +34,7 @@ export default function works() {
                   color
                   target="_blank"
                   href="https://github.com/codejesse/NewsifyV2"
+                  passHref
                 >
                   GitHub
                 </Link>
@@ -41,6 +49,7 @@ export default function works() {
                   color
                   target="_blank"
                   href="https://screentime.vercel.app/"
+                  passHref
                 >
                   Visit
                 </Link>
@@ -49,6 +58,7 @@ export default function works() {
                   color
                   target="_blank"
                   href="https://github.com/codejesse/ScreenTime-movie-app"
+                  passHref
                 >
                   GitHub
                 </Link>
@@ -60,20 +70,21 @@ export default function works() {
               <Text h4>Kso Website</Text>
               <Text>Landing page made for a client.</Text>
               <Card.Footer>
-                <Link target="_blank" href="https://kso.vercel.app/">
+                <Link target="_blank" href="https://kso.vercel.app/" passHref>
                   Visit
                 </Link>
                 <Spacer x={1} />
                 <Link
                   target="_blank"
                   href="https://github.com/codejesse/Kso-website"
+                  passHref
                 >
                   GitHub
                 </Link>
               </Card.Footer>
             </Card>
             <Spacer y={2} />
-            <Link target="_blank" href="https://github.com/codejesse/">
+            <Link target="_blank" href="https://github.com/codejesse/" passHref>
               <Button>Github for more</Button>
             </Link>
           </Grid>
