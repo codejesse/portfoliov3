@@ -4,6 +4,7 @@ import "animate.css";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Menu from "./Menu";
+import Footer from "./Footer";
 // import {Link as Links} from "@nextui-org/react";
 
 export default function Home() {
@@ -35,6 +36,7 @@ export default function Home() {
         <Link href="/works" passHref>
           <button>Explore</button>
         </Link>
+        <Footer />
       </div>
     </div>
   );
