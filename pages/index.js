@@ -28,7 +28,7 @@ export default function Home() {
           quality={100}
         />
         <h2 className="animate__animated animate__fadeInUp">
-          Hi i'm <a href="#">Jesse Beke</a>
+          Hi i'm <Link href="#">Jesse Beke</Link>
         </h2>
         <p className="animate__animated animate__fadeInUp">
           frontend developer

@@ -1,7 +1,8 @@
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
-import Link from 'next/link';
-import { Button, Text, Modal, Row, Grid, Spacer} from "@nextui-org/react";
+import Link from "next/link";
+import { Button, Text, Modal, Row, Grid, Spacer } from "@nextui-org/react";
+import Footer from "./Footer";
 
 export default function Menu() {
   const [visible, setVisible] = useState(false);
@@ -30,21 +31,22 @@ export default function Menu() {
       >
         <Modal.Body className="animate__animated animate__fadeInUp">
           <Grid>
-          <Text className={styles.center} id="modal-title" size={35}>
-          <Link href="/">Home</Link>
-          </Text>
-          <Spacer y={1} />
-          <Text className={styles.center} id="modal-title" size={35}>
-          <Link href="/#">About</Link>
-          </Text> 
-          <Spacer y={1} />
-          <Text className={styles.center} id="modal-title" size={35}>
-          <Link href="/works">Works</Link>
-          </Text>
-          <Spacer y={1} />
-          <Text className={styles.center} id="modal-title" size={35}>
-          <Link href="/Contact">Contact</Link>
-          </Text>
+            <Text className={styles.center} id="modal-title" size={35}>
+              <Link href="/">Home</Link>
+            </Text>
+            <Spacer y={1} />
+            <Text className={styles.center} id="modal-title" size={35}>
+              <Link href="/#">About</Link>
+            </Text>
+            <Spacer y={1} />
+            <Text className={styles.center} id="modal-title" size={35}>
+              <Link href="/works">Works</Link>
+            </Text>
+            <Spacer y={1} />
+            <Text className={styles.center} id="modal-title" size={35}>
+              <Link href="/Contact">Contact</Link>
+            </Text>
+            <Footer />
           </Grid>
         </Modal.Body>
       </Modal>
